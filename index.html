@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Desafoto</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <!-- CSS do upload de imagem -->
+    <link href="html5-fileapi.css" media="all" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <a class="navbar-brand page-scroll" href="#page-top" style="color: #5BC0DE" >Criar Desafio</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#desafios" ><b>Meus Desafios</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#estatisticas"><b>Estatísticas</b></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sobre"><b>Sobre</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                   <div class="col-lg-6">
+                    <div id="example-content">
+
+
+                      <div id="frame">
+
+                        <div id="image-area">
+
+                          <span id="drop-message"><img width="100px" height="100px"  src="images/upload.png"/></span>
+
+
+                        </div>
+
+                        <span id="title">  </span>
+                      </div>
+
+                    <input type="button" class="botaof1"> <input type="button" class="botaof2"> <input type="button" class="botaof3"> <input type="button" class="botaof4">
+                    </div>
+                    </div>
+
+                     <div class="col-lg-6">
+                        <form>
+                            <br><br><br><br>
+                              
+                              <input type="text" name="pergunta1" size="80" placeholder="Pergunta 1">
+                              <br>
+                              <br>
+                              <input type="radio" name="resposta1" value="r11"><input type="text" name="r11" size="10" placeholder="Resposta 1"><input type="radio" name="resposta1" value="r12"><input type="text" name="r12" size="10" placeholder="Resposta 2"><input type="radio" name="resposta1" value="r13"><input type="text" name="r13" size="10" placeholder="Resposta 3"><input type="radio" name="resposta1" value="r14"><input type="text" name="r14" size="10" placeholder="Resposta 4">
+                              <br>
+                              <br>
+                              <input type="text" name="pergunta2" size="80" placeholder="Pergunta 2">
+                              <br>
+                              <br>
+                              <input type="radio" name="resposta2" value="r21"><input type="text" name="r21" size="10" placeholder="Resposta 1"><input type="radio" name="resposta2" value="r22"><input type="text" name="r22" size="10" placeholder="Resposta 2"><input type="radio" name="resposta2" value="r23"><input type="text" name="r23" size="10" placeholder="Resposta 3"><input type="radio" name="resposta2" value="r24"><input type="text" name="r24" size="10" placeholder="Resposta 4">
+                              <br>
+                              <br>
+                              <input type="text" name="pergunta3" size="80" placeholder="Pergunta 3">
+                              <br>
+                              <br>
+                              <input type="radio" name="resposta3" value="r13"><input type="text" name="r31" size="10" placeholder="Resposta 1"><input type="radio" name="resposta3" value="r32"><input type="text" name="r32" size="10" placeholder="Resposta 2"><input type="radio" name="resposta3" value="r33"><input type="text" name="r33" size="10" placeholder="Resposta 3"><input type="radio" name="resposta3" value="r34"><input type="text" name="r34" size="10" placeholder="Resposta 4">
+                              <br>
+                              <br>
+                              <label for="meeting">Data de Expiração: </label><input id="meeting" type="date" value=""/>
+                                <b>Limitar desafio em:</b><select name="cars">
+                                                        <option value="sl" selected="">Sem Limite</option>
+                                                        <option value="lim1">1 Conclusão</option>
+                                                        <option value="lim5">5 Conclusões</option>
+                                                        <option value="lim10">10 Conclusões</option>
+                                                    </select>
+                                 <br><br>                       
+                                <!-- Trigger the modal with a button -->
+                                        <button type="button" class="btn btn-info btn-lg" style"color:white" data-toggle="modal" data-target="#myModal">Criar Desafio</button>
+
+                                        <!-- Modal -->
+                                        <div id="myModal" class="modal fade" role="dialog">
+                                          <div class="modal-dialog">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Desafio criado com Sucesso!</h4>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Link do desafio:</p>
+                                                <b>https://desafoto.com/desafios/id154654645454</b>
+                                                <br><br>
+                                                <img width="30%" height="30%"  src="images/compartilhar.png"/>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                           
+                                              </div>
+                                            </div>
+
+                                          </div>
+                                        </div>
+                                        <button type="reset" class="btn btn-default" style="color:red" data-dismiss="modal">Limpar</button>
+                        </form> 
+                    </div>                     
+
+               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desafios Section -->
+    <section id="desafios" class="desafios-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                        <table>
+                          <tr>
+                            <th>Desafio</th>
+                            <th>Data de Expiração</th>
+                            <th>Ativar</th>
+                            <th>Excluir</th>
+                            
+                          </tr>
+                          <tr>
+                            <td><center><img width="100px" height="100px"  src="images/ex1.jpg"/></center></td>
+                            <td><center><label for="meeting"></label><input id="meeting" type="date" value=""/></center></td>
+                            <td><center><div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div></center>
+                            </td>
+                            <td><center><img width="70px" height="70px"  src="images/lixeira.ico"/></center></td>
+                      
+                          </tr>
+             
+              
+              
+                        </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="estatisticas" class="estatisticas-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Conteúdo Estatísticas</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="sobre" class="sobre-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Conteúdo Sobre</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="html5-file-upload-code.js" type="text/javascript"></script>
+
+</body>
+
+</html>
